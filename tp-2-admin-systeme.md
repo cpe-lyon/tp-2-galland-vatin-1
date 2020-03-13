@@ -115,7 +115,7 @@ On utilise ici `$?` pour récupérer le retour du dernier programme executé pou
 ## Exercice 4. Contrôle d’utilisateur
 Script vérifiant l’existence d’un utilisateur dont le nom est donné en paramètre du script. 
 
-Si le script est appelé sans nom d’utilisateur, il aﬀiche alors le message : ”Utilisation :nom_du_script nom_utilisateur” (le nom de script étant récupéré dynamiquement).
+Si le script est appelé sans nom d’utilisateur, il affiche alors le message : ”Utilisation :nom_du_script nom_utilisateur” (le nom de script étant récupéré dynamiquement).
 
 `me="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"`
 
@@ -209,7 +209,7 @@ Script qui génère un nombre aléatoire entre 1 et 1000, et demande à l’util
 
 On utilise `-gt` pour comparer des nombres et non des chaines de caractères(sinon on aurait utilisé >).
 ## Exercice 7. Statistiques
-**1) 2)** Script prenant en paramètres trois entiers (entre -100 et +100) et aﬀichant le min, le max et la moyenne, puis généralisation à un nombre quelconque de paramètres :
+**1) 2)** Script prenant en paramètres trois entiers (entre -100 et +100) et affichant le min, le max et la moyenne, puis généralisation à un nombre quelconque de paramètres :
 
 `function is_number()`
 
